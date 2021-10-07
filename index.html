@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Minesweeper-Dennis</title>
+</head>
+
+<body onload="init()">
+    <div id="stopwatch">00:00:00:00</div>
+    <div class="bouns-btns">
+        <button id="safe" onclick="safeClick()">Safe Click: <span>3 Remaining</span></button>
+        <div>
+            <button onclick="activateHintClick()">Hints: <span id="hint">3 Remaining</span></button>
+        </div>
+        <div>
+            <button id="placing" onclick="activateMenually()">Place Mines </button>
+        </div>
+        <div>
+            <button id="boom" onclick="activate7Boom()">7BOOM</button>
+        </div>
+    </div>
+    <h1>MineSweeper <span onclick="init()">😀</span></h1>
+    
+    <table>
+        <tbody class="board">
+        </tbody>
+    </table>
+    <h2>Lives: <span>3</span></h2>
+    <div>
+        <button onclick="init()">Eazy</button>
+        <button onclick="init(8)">Normal</button>
+        <button onclick="init(12)">Hard</button>
+    </div>
+
+
+    <script src="js/util.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
